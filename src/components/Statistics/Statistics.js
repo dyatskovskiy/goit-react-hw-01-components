@@ -1,20 +1,27 @@
-import css from './Statistics.module.css';
+import {
+  StatisticsWrap,
+  Title,
+  List,
+  Item,
+  Label,
+  Persentage,
+} from './Statistics.styled';
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <section className={css.statistics}>
-      {title && <h2 className={css.title}>{title}</h2>}
-      <ul className={css.statList}>
+    <StatisticsWrap>
+      {title && <Title>{title}</Title>}
+      <List>
         {stats.map(stat => {
           return (
-            <li className={css.item} key={stat.id}>
-              <span className={css.label}>{stat.label}</span>
-              <span className={css.percentage}>{stat.percentage}</span>
-            </li>
+            <Item key={stat.id}>
+              <Label>{stat.label}</Label>
+              <Persentage>{stat.percentage}%</Persentage>
+            </Item>
           );
         })}
-      </ul>
-    </section>
+      </List>
+    </StatisticsWrap>
   );
 };
 

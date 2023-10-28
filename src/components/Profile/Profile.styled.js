@@ -10,7 +10,6 @@ export const ProfileWrapper = styled.div`
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
   background-color: #fff;
-
   -webkit-box-shadow: 0px 5px 17px -4px #000000;
   box-shadow: 0px 5px 17px -4px #000000;
 `;
