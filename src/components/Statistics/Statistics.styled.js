@@ -30,10 +30,12 @@ export const Item = styled.li`
 export const Label = styled.span`
   padding: 10px;
   color: white;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
 `;
 
 export const Persentage = styled.span`
   font-size: 25px;
   padding: 15px;
   color: white;
+  text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.8);
 `;
